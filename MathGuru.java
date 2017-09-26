@@ -49,6 +49,14 @@ public class MathGuru {
 	}
 	}
 
+public int selection_1(int x){
+	int n=1;
+	for(int i=0;i<x;i++){
+		 n=n*2;
+	}
+	return n;
+	
+}
 
 public int selection_2(int x){
 	int n=1;
@@ -76,6 +84,7 @@ public int selection_3(int x){
 	return n;
 	}
 }
+
 
 
 }
