@@ -50,8 +50,12 @@ public class MathGuru {
 	}
 
 public int selection_1(int x){
-	return 0;
+	int n=1;
+	for(int i=0;i<x;i++){
+		 n=n*2;
+	}
+	return n;
+	
 }
-
 
 }
