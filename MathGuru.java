@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class MathGuru {
 	public static void main(String[] arge){
-		boolean isRunning=true;
-		while(isRunning){
+		while(true){
 		System.out.println("Please select the calculation model");
 		System.out.println("Print 1 for 2^n");
 		System.out.println("Print 2 for n!");
@@ -51,19 +50,18 @@ public class MathGuru {
 				System.out.println("The result is "+z);
 				
 			}else{
-				System.out.println("the input is wrong, please select model again");
-				
+				System.out.println("the input is illegal");
 			}
 			System.out.println("Do you want to calculate somenumber else? Please input"+" yes"+ " or "+"no");
 			Scanner scanner_1 = new Scanner(System.in);
 			String s=scanner_1.nextLine();
 			if(s.toLowerCase().equals("yes")){
-				isRunning=true;
+				continue;
 			}else{
-				isRunning=false;
+				break;
 			}
 		} catch(Exception e) {
-			
+			System.out.println("The input is illegal");
 		}
 	}
 	}
