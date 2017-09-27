@@ -68,42 +68,5 @@ public class MathGuru {
 	}
 	}
 
-public int selection_1(int x){
-	int n=1;
-	for(int i=0;i<x;i++){
-		 n=n*2;
-	}
-	return n;
-	
-}
-
-public int selection_2(int x){
-	int n=1;
-	for(int i=1;i<=x;i++){
-		n=n*i;
-
-	}
-	return n;
-	
-	
-}
-public int selection_3(int x){
-	if(x==1||x==2){
-		return 1;
-	}else{
-	int n=0;
-	int[] fib=new int[x];
-	fib[0]=1;
-	fib[1]=1;
-	for(int i=2;i<fib.length;i++){
-		fib[i]=fib[i-1]+fib[i-2];
-		n=fib[i];
-	}
-	
-	return n;
-	}
-}
-
-
 
 }
